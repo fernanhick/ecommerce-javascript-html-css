@@ -18,11 +18,12 @@ collageImages.map((item, i) => {
     })
 })
 
-const navbar = document.querySelector('navbar')
+const navbar = document.querySelector('.navbar')
 
 window.addEventListener('scroll', () => {
-    if (scroll >= 180) {
+    if (scrollY >= 180) {
         navbar.classList.add('bg')
+        console.log(scrollY)
     } else {
         navbar.classList.remove('bg')
     }
