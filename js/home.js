@@ -17,3 +17,13 @@ collageImages.map((item, i) => {
         })
     })
 })
+
+const navbar = document.querySelector('navbar')
+
+window.addEventListener('scroll', () => {
+    if (scroll >= 180) {
+        navbar.classList.add('bg')
+    } else {
+        navbar.classList.remove('bg')
+    }
+})
